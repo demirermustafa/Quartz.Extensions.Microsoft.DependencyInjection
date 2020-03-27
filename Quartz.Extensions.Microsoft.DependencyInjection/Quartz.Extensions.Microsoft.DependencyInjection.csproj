@@ -3,11 +3,13 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <PackageId>Quartz.Extensions.Microsoft.DependencyInjection</PackageId>
-    <PackageVersion>0.0.1</PackageVersion>
+    <PackageVersion>0.0.2</PackageVersion>
     <Authors>Mustafa DEMİRER</Authors>
     <Description>Dependency injection extensions Quartz</Description>
     <PackageTags>quartz;dependencyinjection;di;quartzdependencyinjection;quartzdi;extensions;extensionsdependencyinjection;extensionsdi</PackageTags>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/demirermustafa/Quartz.Extensions.Microsoft.DependencyInjection</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes></PackageReleaseNotes>
     <Copyright></Copyright>
     <PackageTags></PackageTags>

@@ -16,7 +16,7 @@ namespace WebApiSampleNetCore2._2.Jobs
 
         public Task Execute(IJobExecutionContext context)
         {
-            _logger.LogInformation("Cache is updated!" + DateTime.Now);
+            _logger.LogInformation("Singleton Job Executed: " + DateTime.UtcNow);
             return Task.CompletedTask;
         }
     }

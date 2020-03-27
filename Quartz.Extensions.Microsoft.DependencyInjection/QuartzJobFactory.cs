@@ -5,7 +5,7 @@ using Quartz.Spi;
 
 namespace Quartz.Extensions.Microsoft.DependencyInjection
 {
-    public class QuartzJobFactory : IJobFactory
+    internal class QuartzJobFactory : IJobFactory
     {
         private readonly IServiceProvider _serviceProvider;
         public QuartzJobFactory(IServiceProvider serviceProvider)

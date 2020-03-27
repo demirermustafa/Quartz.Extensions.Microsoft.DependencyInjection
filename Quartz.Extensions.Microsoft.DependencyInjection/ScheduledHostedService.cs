@@ -6,7 +6,7 @@ using Quartz.Spi;
 
 namespace Quartz.Extensions.Microsoft.DependencyInjection
 {
-    public class ScheduledHostedService : IHostedService
+    internal class ScheduledHostedService : IHostedService
     {
         private readonly ISchedulerFactory _schedulerFactory;
         private readonly IJobFactory _jobFactory;

@@ -28,9 +28,9 @@ namespace WebApiSampleNetCore2._2
 
             services.AddScoped<IScopedSampleService, ScopedSampleService>();
 
-            services.AddScheduledHostedService()
-                .AddJob(typeof(SingletonJob), "0/5 * * * * ?")
-                .AddJob(new ScheduledJob(typeof(ScopedJob), "0/5 * * * * ?"));
+            services.AddJob<SingletonJob>(c => { c.CronExpression = "0/5 * * * * ?"; });
+            services.AddJob<ScopedJob>(c => { c.CronExpression = "0/1 * * * * ?"; });
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

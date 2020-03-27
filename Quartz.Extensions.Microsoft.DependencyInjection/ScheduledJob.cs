@@ -2,7 +2,7 @@
 
 namespace Quartz.Extensions.Microsoft.DependencyInjection
 {
-    public class ScheduledJob
+    internal sealed class ScheduledJob
     {
         public ScheduledJob(Type type, string cronExpression, string description = null)
         {

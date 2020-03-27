@@ -18,11 +18,7 @@ namespace WebApiSampleNetCore2._2
 
         public async Task DoWork()
         {
-            _logger.LogInformation("Scoped service is starting");
-
-            await Task.Delay(100);
-
-            _logger.LogInformation("Cache update is ended");
+            await Task.Delay(1000);
         }
     }
 }

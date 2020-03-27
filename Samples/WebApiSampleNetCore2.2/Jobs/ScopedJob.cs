@@ -26,8 +26,7 @@ namespace WebApiSampleNetCore2._2.Jobs
 
                 await scopedSampleService.DoWork();
             }
-
-            _logger.LogInformation("Hello world!" + DateTime.Now);
+            _logger.LogWarning("Scoped Job Executed: " + DateTime.UtcNow);
         }
 
     }
