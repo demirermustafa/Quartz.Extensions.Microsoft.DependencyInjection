@@ -1,13 +1,13 @@
 ## Quartz.Extensions.Microsoft.DependencyInjection
 
-Dependency injection extensions Quartz
+Dependency injection extensions for Quartz. It allows to inject a job easily in a standart way. Jobs are registered in **Startup.ConfigureServices** by using **AddJob** extension method as in the below configuration sample.
 
 ## Installation
 >  Install-Package Quartz.Extensions.Microsoft.DependencyInjection
 
-## Configuration
-To register a quartz job, use the AddJob method as follows. 
-Multiple jobs are easily injected in fluent way as in the coding conventions that used at NetCore.
+## Sample Configuration
+To register a quartz job, use the AddJob method as follows.  And then, cron expression should be set.
+Multiple jobs are easily injected in fluent syntax as in the coding conventions that used at NetCore.
 
 ```csharp
  public class Startup
